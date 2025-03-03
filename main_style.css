@@ -1,0 +1,28 @@
+/* Back Button Styling */
+.to_main_page {
+    position: fixed;
+    top: 20px;
+    right:20px ;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.to_main_page:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.to_main_page:active {
+    transform: translateY(0);
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+}
