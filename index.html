@@ -1,16 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML&CSS&JS projects</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Frontend Projects</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #dde6f0, #f7f9fb);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 60px 20px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #2c3e50;
+      margin-bottom: 50px;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      max-width: 1100px;
+      width: 100%;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.7);
+      border-radius: 18px;
+      padding: 24px 28px;
+      backdrop-filter: blur(12px);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+      text-decoration: none;
+      color: #2c3e50;
+      transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.1);
+      background: rgba(255, 255, 255, 0.9);
+    }
+
+    .card::after {
+      content: "→";
+      position: absolute;
+      top: 24px;
+      right: 24px;
+      font-size: 1.5rem;
+      color: #3498db;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover::after {
+      transform: translateX(5px);
+    }
+
+    .card-title {
+      font-size: 1.4rem;
+      font-weight: 600;
+      margin-bottom: 10px;
+      color: #3498db;
+    }
+
+    .card-description {
+      font-size: 1rem;
+      color: #555;
+      line-height: 1.5;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 30px 10px;
+      }
+      h1 {
+        font-size: 1.8rem;
+        text-align: center;
+      }
+    }
+  </style>
 </head>
 <body>
-    
-    <a href="expanding_cards/expanding_cards.html">Expanding cards</a>
-    <a href="./progress_steps/progress_step.html">Progress Step</a>
-    <a href="./rotating_naviation/rotating_navigation.html">Rotating Navigation</a>
-    <a href="./hidden_search_widget/hidden_search_widget.html">Hidden Search Widget</a>
-    <a href="./blurry_loading/blurry_loading.html">Blurry Loading</a>
+
+  <h1>🚀 My Mini Frontend Projects</h1>
+
+  <div class="projects-grid">
+    <a class="card" href="expanding_cards/expanding_cards.html">
+      <div class="card-title">Expanding Cards</div>
+      <div class="card-description">Beautiful image cards that expand smoothly on click to reveal more content.</div>
+    </a>
+    <a class="card" href="progress_steps/progress_step.html">
+      <div class="card-title">Progress Step</div>
+      <div class="card-description">Visual step indicator with a dynamic progress bar and easy-to-follow UI.</div>
+    </a>
+    <a class="card" href="rotating_naviation/rotating_navigation.html">
+      <div class="card-title">Rotating Navigation</div>
+      <div class="card-description">A creative navigation menu that rotates the page layout with animation.</div>
+    </a>
+    <a class="card" href="hidden_search_widget/hidden_search_widget.html">
+      <div class="card-title">Hidden Search Widget</div>
+      <div class="card-description">Minimalist design with a hidden search bar that elegantly appears on click.</div>
+    </a>
+    <a class="card" href="blurry_loading/blurry_loading.html">
+      <div class="card-title">Blurry Loading</div>
+      <div class="card-description">Cool loading effect where the background unblurs as content loads in.</div>
+    </a>
+  </div>
+
 </body>
 </html>
