@@ -1,5 +1,5 @@
 const container = document.getElementById("projectsContainer");
-const API_URL = "https://api.npoint.io/f227b2b182b92aa4718e"; // Replace this with your actual API URL
+const API_URL = "https://api.npoint.io/86c5397204c6e579cd2b"; // Replace this with your actual API URL
 
 fetch(API_URL)
   .then(response => {
