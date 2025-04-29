@@ -1,17 +1,77 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 
 *{
     box-sizing: border-box;
 }
 
 body{
-    background-color: #efedd6;
-    font-family: "Roboto", "sans-serif";
+    background-color: steelblue;
+    color: white;
+    font-family: "Muli", "sans-serif";
     
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     overflow-x: hidden;
+    height: 100vh;
 }
 
+
+.container{
+    background-color: rgba(0, 0, 0, 0.4);
+    padding:20px 40px;
+    border-radius: 5px;
+}
+
+.container h1{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.container a{
+    text-decoration: none;
+    color: lightblue;
+}
+
+.form-control{
+    position:relative;
+    margin:20px 0 40px;
+    width: 300px;
+}
+
+.form-control input{
+    background-color: transparent;
+    border:0;
+    border-bottom: 2px white solid;
+    display: block;
+    width: 100%;
+    padding:15px 0;
+    font-size:18px;
+    color: white;
+}
+
+.form-control input:focus, .form-control input:valid{
+    outline:0;
+}
+.btn{
+    cursor:pointer;
+    display: inline-block;
+    width: 100%;
+    background-color: lightblue;
+    padding: 15px ;
+    font-family: inherit;
+    font-size:1rem;
+    border:0;
+    border-radius: 5px;
+}
+.btn:focus{
+    outline: 0;
+}
+.btn:active{
+    transform: scale(0.98);
+}
+
+.text{
+    margin-top: 30px;
+}
