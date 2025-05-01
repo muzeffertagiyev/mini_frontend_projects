@@ -91,7 +91,7 @@ h3{
     font-size: 12px;
 }
 
-.percantage{
+.percentage{
     background-color: var(--fill-color);
     font-size: 30px;
     display: flex;
