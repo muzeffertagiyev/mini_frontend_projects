@@ -7,9 +7,9 @@
 
 body{
     font-family: "Muli", "sans-serif";
-    background-color: #eafbff;
-    background-image: linear-gradient(to bottom,#eafbff 0%, #eafbff 50%, #5290f9 50%,#5290f9 100%);
+
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
