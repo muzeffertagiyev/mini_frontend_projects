@@ -19,6 +19,24 @@ body{
 header{
     padding:1rem;
     background-color: var(--secondary-color);
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+header .home{
+    display: inline-block;
+    color: red;
+    text-decoration: none;
+    margin: 15px 0 15px 15px;
+    background-color: var(--primary-color);
+    width: 80px;
+    text-align: center;
+    border-radius: 5px;
+    padding:8px;
+    font-size: 1.2rem;
+}
+header .home:hover{
+    opacity: 0.7;
 }
 
 .search{
