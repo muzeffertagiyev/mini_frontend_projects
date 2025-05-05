@@ -20,7 +20,6 @@ body{
     height: 100vh;
     overflow: hidden;
     margin:0;
-    background-image: url("https://picsum.photos/id/684/600/400");
     background-position: center center;
     background-size: cover;
     transition: 0.4s ease;
